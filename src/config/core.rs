@@ -27,6 +27,8 @@ impl Config {
         let module = match module.as_str() {
             "--version" => Func::Version,
             "-v" => Func::Version,
+            "--help" => Func::Help,
+            "-h" => Func::Help,
             _ => return Err("Invalid function"),
         };
 
