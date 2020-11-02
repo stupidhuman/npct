@@ -1,7 +1,10 @@
 use std::env;
+use npct::config::core::Config;
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
+    let args = env::args();
 
     println!("args: {:?}", args);
+
+    let config = Config::from_args(args);
 }
