@@ -22,3 +22,11 @@ pub enum Func {
     // 功能-文件路由（参数：路由配置）
     Route(RouteConfig),
 }
+
+#[cfg(test)]
+mod test {
+    #[test]
+    fn it_works() {
+        println!("it works!");
+    }
+}
