@@ -1,7 +1,7 @@
 /**
  * file-server模块（用于对 本地文件/网络文件 进行静态路由）
  */
-pub struct FileServer {
+pub struct ServerConfig {
     pub func: Func,
 }
 
