@@ -1,7 +1,8 @@
+//! 用于解析命令行参数的模块
+//! # 命令行Example
+//! npct [功能模块名] [附加参数（"-"开头的简写参数/"--"开头的全拼参数）] [模块输入参数1] [模块输入参数2] ....
 use std::env;
-/**
- * 用于解析命令行输入的模块
- */
+
 pub struct InitialConfig {
     pub from_path: String,
     pub module: String,
